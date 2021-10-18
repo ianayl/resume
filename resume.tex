@@ -1,13 +1,15 @@
+%
+% TODO figure out formatting of resume, it sucks rn
+%
+
 \documentclass{article}
 
-\usepackage{amsfonts,amssymb,amsthm,amsmath}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage{mathptmx}
-% \usepackage[margin=0.79in]{geometry}
-\usepackage{fullpage}
-\usepackage[pdftex]{graphicx}
+\usepackage[margin=0.79in]{geometry}
+% \usepackage{fullpage}
 
 % I don't want indents
 \setlength{\parindent}{0in}
@@ -36,18 +38,20 @@
 		\vspace{-4em}
 		{\huge\bfseries
 		\theauthor}
-	\vspace{1em}
-	\\
-    \textit{Address Redacted} \\
-    \textit{Email Redacted} --- \textit{Phone Redacted} \\
-	www.github.com/ianayl
+    \vspace{0.2em}
+    \\
+    % \textit{Address Redacted} \\
+    % \textit{Email Redacted} --- \textit{Phone Redacted} \\
+    Github: @ianayl, Email: ali629@uwo.ca
 }
 
 \titlespacing{\subsubsection}
-{1em}{0.25em}{0.5em}
+{0em}{0.25em}{0.5em}
 
 \titlespacing{\subsection}
 {0em}{1.5em}{0em}
+
+\setitemize{noitemsep}
 
 \author{Ian Li}
 
@@ -65,74 +69,90 @@
 
 \section{Skills}
 
-\subsection{Technology}
-
-\subsubsection{Programming}
-Familiar with C and POSIX shell scripting, Experience in Python, Java, Javascript
-
-\subsubsection{Web}
-Experience with MongoDB, Express, React, NodeJs, Sass, Apache, Foundation, Bootstrap, Wordpress
-
-% \subsection{Knowledge}
-% \subsubsection{Computers}
-% Basic knowledge about workings of low level CPU components, such as the ALU or Flip-Flops 
-% \subsubsection{Programming}
-% Solid understanding of programming concepts such as OOP, ACID, Unix philosophy
-% \subsubsection{Workflow} Understanding of workflow concepts such as SDLC, Agile and Waterfall Methodology
-
-\subsection{Development}
-\subsubsection{Tools}
-Experience with PCRE Regex/Sed, Git, Netlify, PHPMyAdmin, Photoshop, Gimp, Blender
-\subsubsection{Linux}
-Familiar with Linux environments, Experience with Nix and NixOS
-
-% \subsection{Versatile}
-% \subsubsection{Quick Learner} Most skills were learnt with demand, able to quickly learn skills as needed
+\begin{tabular}{ l l }
+    \textbf{Programming Languages} & C, Sh/Bash, Python, Java, Javascript \\
+    \textbf{Frameworks} & MongoDB, Express, React, NodeJS, Sass, Axios, Apache, Foundation, Bootstrap, and \\
+    & WordPress \\
+    \textbf{Tooling} & Linux, Nix/NixOS, PCRE Regex/Sed, Git, SSH/Telnet, Valgrind, Netlify, Heroku, and \\
+    & PHPMyAdmin\\
+    \textbf{Certificates} & Microsoft Azure AI-900, Cybersecurity Basics and Penetration test automation
+\end{tabular}
 
 \section*{Experiences}
 
-\subsection{Full-Stack Developer (Startup)}
-\subsubsection{Rentura}
-Started an MVP of a furniture rental site with friends based on the MERN Stack\ --- 2021\--Current
+\subsection{Principal Software Lead, \textit{Rentura} \hfill \normalsize\textnormal{2021 -- Current}}
+\begin{itemize}
+    \item Lead the development of an \textbf{MVP webapp} using the \textbf{MERN} stack for furniture rental services
+    \item Developed a \textbf{RESTful API} using \textbf{Express.js} with \textbf{CRUD} endpoints, and managed \textbf{MongoDB} instance and schemas 
+    \item Developed a mobile-first responsive \textbf{React.js} frontend using \textbf{Sass} and \textbf{Axios}
+    % \item TODO add business stuff later
+    % \item 2021\--Current
+\end{itemize}
 
+\subsection{Web Developer, \textit{nvision} \hfill \normalsize\textnormal{2019}}
+\begin{itemize}
+    \item Maintained \textbf{WordPress} sites using \textbf{LAMP} Stack, Developed themes and linked data from \textbf{MySQL} to WordPress
+    \item Developed internal dashboards for employees using \textbf{MERN} stack and \textbf{Bootstrap} 
+\end{itemize}
 
-\subsection{Web Developer (Internship)}
-\subsubsection{nvision} Develop websites and full-stack applications using wordpress + LAMP Stack and MERN Stack\ --- 2019
+\subsection{System Administrator, \textit{Gang RP Network} \hfill \normalsize\textnormal{2017-2018}}
+\begin{itemize}
+    \item Created custom game mods and 3D assets for game servers using Unity and Blender
+    \item Maintained servers through Telnet, maintained internal management dashboards and image assets
+\end{itemize}
 
-\subsection{FIRST Robotics Competition}
-\subsubsection{Markham Space Invaders (Team 6866)} Developed code for a conveyor magazine system in Java\ --- 2020
-
-\subsection{Hobbist Project}
-\subsubsection{"exint"} Writing an imperative, statically typed interpreted language with type inference in C\ --- 2020\--Current
+\subsection{Software Developer, \textit{FIRST Robotics Team 6866} \hfill \normalsize\textnormal{2018}}
+\begin{itemize}
+    \item Developed software for a conveyor magazine system in Java using WPILib
+\end{itemize}
 
 % \subsection{Computer Repairs} 
 % \subsubsection{Home} Repaired laptop components, reflashed BIOS, fixed and reinstalled Operating Systems for clients privately 
 
-\subsection{System Administrator}
-\subsubsection{Gang RP Network} Maintained servers through telnet, created new 3D assets for game servers\ \ \ --- 2017\--2018
+% \subsection{Teaching Assistant}
+% \subsubsection{Markham}
+% Ran Google CS/STEM workshops (hour of code, scratch, basic 3D modelling, etc) --- 2014\--2018  
 
-\subsection{Teaching Assistant}
-\subsubsection{Markham}
-Ran Google CS/STEM workshops (hour of code, scratch, basic 3D modelling, etc) --- 2014\--2018  
+\section*{Projects}
 
+\subsection{Experimental Interpreter \hfill \normalsize\textnormal{2020 -- Current}}
+A statically typed interpreted language with type inference, written from scratch in C
+\vspace{-0.5em}
+\begin{itemize}
+    \item Designed an LL(1) parser that parses abstract syntax trees, which are evaluated using a tree-walk evaluator 
+        % TODO phrasing here sucks balls redo it
+    \item Goal is to develop an easy-to-use general purpose programming language that is predictable, eventually with its own compiler and JIT based interpreter 
+    \item Developing activation records via parent-child trees and strong typing (Hindley-Milner type system) currently
+\end{itemize}
+
+\subsection{Shell Site Generator (\texttt{shsg}) \hfill \normalsize\textnormal{2020 -- Current}}
+    A highly lightweight and portable static site generator that can be deployed on every UNIX-like environment
+\vspace{-0.5em}
+\begin{itemize}
+    \item Developing a static site generator written in pure POSIX-compatible shell and PCRE-compatible Regex
+    \item Converts markdown files to themed html pages using only regex/sed 
+    \item Developing regex required to parse tables and lists, and removing dependency on PCRE (GNU coreutils) currently
+\end{itemize}
 
 \section{Education}
 \subsection{University of Western Ontario}
-\subsubsection{Computer Science} anticipated in June 2024 --- Currently in year 2
-\subsection{Markville Secondary School}
-\subsubsection{Ontario Secondary School Diploma} June 2020
+\subsubsection{Candidate for Bachelor of Science} Honours Computer Science, Major in Mathematics --- Anticipated in June 2024
 
-\section{Certifications}
-\begin{itemize}
-    \item Certified in \textbf{Cybersecurity Basics and Penetration test automation}
-    \item Certified in \textbf{Standard First Aid, CPR Level C, AED training}
-    \item Certified in \textbf{Ergonomics training}
-    \item Certified in \textbf{Health and Safety Basics, WHMIS training}
-    \item Certified in \textbf{Personality Dimensions}
-    \item Certified in the \textbf{ICE process}
-\end{itemize}
+\subsubsection{Relevant courses} CS 2210A -- Data Structures and Algorithms, Math 2155F -- Mathematical Structures
+% \subsection{Markville Secondary School}
+% \subsubsection{Ontario Secondary School Diploma} June 2020
 
-\section{References}
-References available upon request
+% \section{Certifications}
+% \begin{itemize}
+%     \item Certified in \textbf{Cybersecurity Basics and Penetration test automation}
+%     \item Certified in \textbf{Standard First Aid, CPR Level C, AED training}
+%     \item Certified in \textbf{Ergonomics training}
+%     \item Certified in \textbf{Health and Safety Basics, WHMIS training}
+%     \item Certified in \textbf{Personality Dimensions}
+%     \item Certified in the \textbf{ICE process}
+% \end{itemize}
+% 
+% \section{References}
+% References available upon request
 
 \end{document}
