@@ -2,7 +2,7 @@
 % TODO figure out formatting of resume, it sucks rn
 %
 
-\documentclass{article}
+\documentclass[9pt]{article}
 
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -70,11 +70,9 @@
 \section{Skills}
 
 \begin{tabular}{ l l }
-    \textbf{Programming Languages} & C, Sh/Bash, Python, Java, Javascript \\
-    \textbf{Frameworks} & MongoDB, Express, React, NodeJS, Sass, Axios, Apache, Foundation, Bootstrap, and \\
-    & WordPress \\
-    \textbf{Tooling} & Linux, Nix/NixOS, PCRE Regex/Sed, Git, SSH/Telnet, Valgrind, Netlify, Heroku, and \\
-    & PHPMyAdmin\\
+    \textbf{Programming Languages} & C, Sh/Bash, Python, Java, Javascript, ARM assembly \\
+    \textbf{Frameworks} & React, Express, NodeJS, Sass, Axios, Foundation, Bootstrap, MongoDB (Mongoose), Flask \\
+    \textbf{Tooling} & Linux, Nix/NixOS, Regular expressions, Sed, Git, SSH/Telnet, Gdb, Valgrind, Netlify, Heroku \\
     \textbf{Certificates} & Microsoft Azure AI-900
 \end{tabular}
 
@@ -95,11 +93,11 @@
     \item Developed internal dashboards for employees using \textbf{MERN} stack and \textbf{Bootstrap} 
 \end{itemize}
 
-\subsection{System Administrator, \textit{Gang RP Network} \hfill \normalsize\textnormal{2017-2018}}
-\begin{itemize}
-    \item Created custom game mods and 3D assets for game servers using Unity and Blender
-    \item Maintained servers through Telnet, maintained internal management dashboards and image assets
-\end{itemize}
+% \subsection{System Administrator, \textit{Gang RP Network} \hfill \normalsize\textnormal{2017-2018}}
+% \begin{itemize}
+%     \item Created custom game mods and 3D assets for game servers using Unity and Blender
+%     \item Maintained servers through Telnet, maintained internal management dashboards and image assets
+% \end{itemize}
 
 \subsection{Software Developer, \textit{FIRST Robotics Team 6866} \hfill \normalsize\textnormal{2020}}
 \begin{itemize}
@@ -116,42 +114,38 @@
 \section*{Projects}
 
 \subsection{Experimental Interpreter \hfill \normalsize\textnormal{2020 -- Current}}
-A statically typed interpreted language with type inference, written from scratch in C
+Interpreted programming langauge written from scratch in C, with goals of static typing and strong type inference
 \vspace{-0.5em}
 \begin{itemize}
-    \item Designed an LL(1) parser that parses abstract syntax trees, which are evaluated using a tree-walk evaluator 
+    \item Designed an LL(1) parser that produces abstract syntax trees, evaluated using a tree-walk evaluator 
         % TODO phrasing here sucks balls redo it
-    \item Goal is to develop an easy-to-use general purpose programming language that is predictable, eventually with its own compiler and JIT based interpreter 
-    \item Developing activation records via parent pointer trees and strong typing (Hindley-Milner type system) currently
+    \item Goal is a predictable general-purpose language, eventually with its own compiler and JIT based interpreter 
+    \item Currently developing activation records via parent-pointer trees and a strong typing system (Hindley-Milner)
 \end{itemize}
 
 \subsection{Shell Site Generator (\texttt{shsg}) \hfill \normalsize\textnormal{2020 -- Current}}
-    A highly lightweight and portable static site generator that can be deployed on every UNIX-like environment
+    Minimalistic, lightweight and portable static site generator that can be deployed on any minimal UNIX-like environment
 \vspace{-0.5em}
 \begin{itemize}
     \item Developing a static site generator written in pure POSIX-compatible shell and PCRE-compatible Regex
-    \item Converts markdown files to themed html pages using only regex/sed 
-    \item Developing regex required to parse tables and lists, and removing dependency on PCRE (GNU coreutils) currently
+    \item Compiles markdown files to themed html pages using pure regex/sed; Program dependent on only coreutils 
+    \item Currently developing regex required to parse tables and lists, and removing dependency on PCRE (GNU coreutils)
+\end{itemize}
+
+\subsection{Mindless \hfill \normalsize\textnormal{2021}}
+    A proof-of-concept biometrics password manager that doesn't actually store any passwords
+\vspace{-0.5em}
+\begin{itemize}
+    \item Developed a biometrics-based password manager using facial recognition (opencv) with a web frontend (flask)
+    \item Developed a hashing algorithm to produce passwords from facial landmark data; No password is ever stored
+    \item Finalist project in a 36-hour hackathon (Hackwestern 8), competing as a one-man team out of 346 teams
 \end{itemize}
 
 \section{Education}
-\subsection{University of Western Ontario}
-\subsubsection{Candidate for Bachelor of Science} Honours Computer Science, Major in Mathematics --- Anticipated in June 2024
+\subsection{University of Western Ontario \hfill \normalsize\textnormal{2021 -- Current}}
+\subsubsection{Candidate for Bachelor of Science} Specialist in Honours Computer Science, Anticipated in June 2024
 
-\subsubsection{Relevant courses} CS 2210A -- Data Structures and Algorithms, Math 2155F -- Mathematical Structures
-% \subsection{Markville Secondary School}
-% \subsubsection{Ontario Secondary School Diploma} June 2020
-
-% \section{Certifications}
-% \begin{itemize}
-%     \item Certified in \textbf{Cybersecurity Basics and Penetration test automation}
-%     \item Certified in \textbf{Standard First Aid, CPR Level C, AED training}
-%     \item Certified in \textbf{Ergonomics training}
-%     \item Certified in \textbf{Health and Safety Basics, WHMIS training}
-%     \item Certified in \textbf{Personality Dimensions}
-%     \item Certified in the \textbf{ICE process}
-% \end{itemize}
-% 
+\subsubsection{Awards} Dean's Honor List (2021 Fall/Winter), 3.9/4.0 GPA (90\%)
 % \section{References}
 % References available upon request
 
