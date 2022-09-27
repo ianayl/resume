@@ -42,7 +42,7 @@
     \\
     % \textit{Address Redacted} \\
     % \textit{Email Redacted} --- \textit{Phone Redacted} \\
-    Github: @ianayl, Email: ali629@uwo.ca
+    Github: @ianayl, Email: ianayl@tutanota.com
 }
 
 \titlespacing{\subsubsection}
@@ -70,27 +70,28 @@
 \section{Skills}
 
 \begin{tabular}{ l l }
-    \textbf{Programming Languages} & C, Sh/Bash, Python, Java, Javascript, ARM assembly \\
-    \textbf{Frameworks} & React, Express, NodeJS, Sass, Axios, Foundation, Bootstrap, MongoDB (Mongoose), Flask \\
-    \textbf{Tooling} & Linux, Nix/NixOS, Regular expressions, Sed, Git, SSH/Telnet, Gdb, Valgrind, Netlify, Heroku \\
+    \textbf{Programming Languages} & C, POSIX sh, Bash, Python, Java, Javascript, ARM assembly \\
+    \textbf{Web Development} & React, Express, NodeJS, Sass, Axios, Foundation, Bootstrap, MongoDB (Mongoose), Flask \\
+    \textbf{Tooling} & Linux, Nix/NixOS, PCRE Regex, Sed, Git, SSH/Telnet, Gdb, Valgrind, Netlify, Heroku \\
     \textbf{Certificates} & Microsoft Azure AI-900
 \end{tabular}
 
 \section*{Experiences}
 
-\subsection{Principal Software Lead, \textit{Rentura} \hfill \normalsize\textnormal{2021 -- Current}}
+\subsection{Software Lead, \textit{Rentura (Startup)} \hfill \normalsize\textnormal{2021 -- Current}}
 \begin{itemize}
-    \item Lead the development of an \textbf{MVP webapp} using the \textbf{MERN} stack for furniture rental services
-    \item Developed a \textbf{RESTful API} using \textbf{Express.js} with \textbf{CRUD} endpoints, and managed \textbf{MongoDB} instance and schemas 
-    \item Developed a mobile-first responsive \textbf{React.js} frontend using \textbf{Sass} and \textbf{Axios}
+  \item Technical lead for the development of the \textit{minimum viable product} for a B2C furniture rental platform
+  \item Developed an \textbf{Express.js} backend, implementing a \textbf{RESTful API} with \textbf{CRUD} endpoints; \textbf{OpenAPI} schema in works
+  \item Maintained \textbf{MongoDB} instances and designed MongoDB schemas; Switch to PostgreSQL anticipated
+  \item Developed a responsive, mobile-first \textbf{React.js} frontend using \textbf{Sass} and \textbf{Axios} (\textbf{MERN} stack)
     % \item TODO add business stuff later
     % \item 2021\--Current
 \end{itemize}
 
 \subsection{Web Developer, \textit{nvision} \hfill \normalsize\textnormal{2019}}
 \begin{itemize}
-    \item Maintained \textbf{WordPress} sites using \textbf{LAMP} Stack, Developed themes and linked data from \textbf{MySQL} to WordPress
-    \item Developed internal dashboards for employees using \textbf{MERN} stack and \textbf{Bootstrap} 
+  \item Designed and developed internal employee dashboards using \textbf{MERN} stack and \textbf{Bootstrap} 
+  \item Developed user-friendly Wordpress themes; Maintained a \textbf{LAMP} stack on a \textbf{Linux} system to host \textbf{WordPress} sites
 \end{itemize}
 
 % \subsection{System Administrator, \textit{Gang RP Network} \hfill \normalsize\textnormal{2017-2018}}
@@ -101,7 +102,7 @@
 
 \subsection{Software Developer, \textit{FIRST Robotics Team 6866} \hfill \normalsize\textnormal{2020}}
 \begin{itemize}
-    \item Developed software for a conveyor magazine system in Java using WPILib
+  \item Developed software for a conveyor magazine system to reliably send ammo to a flywheel system in \textbf{Java} using WPILib
 \end{itemize}
 
 % \subsection{Computer Repairs} 
@@ -113,32 +114,32 @@
 
 \section*{Projects}
 
-\subsection{Experimental Interpreter \hfill \normalsize\textnormal{2020 -- Current}}
-Interpreted programming langauge written from scratch in C, with goals of static typing and strong type inference
+\subsection{Experimental Language \hfill \normalsize\textnormal{2020 -- Current}}
+Interpreted programming langauge written from scratch in \textbf{C}, with goals of static typing and strong type inference
 \vspace{-0.5em}
 \begin{itemize}
-    \item Designed an LL(1) parser that produces abstract syntax trees, evaluated using a tree-walk evaluator 
+  \item Designed an \textbf{LL(1)} parser producing abstract syntax trees, evaluated using a \textbf{tree-walk evaluator}predictable  
+    \item In works: \textbf{LR} parser integrated with an automata-based lexer, x86 Compilation, strong typing system and type inference
         % TODO phrasing here sucks balls redo it
-    \item Goal is a predictable general-purpose language, eventually with its own compiler and JIT based interpreter 
-    \item Currently developing activation records via parent-pointer trees and a strong typing system (Hindley-Milner)
-\end{itemize}
-
-\subsection{Shell Site Generator (\texttt{shsg}) \hfill \normalsize\textnormal{2020 -- Current}}
-    Minimalistic, lightweight and portable static site generator that can be deployed on any minimal UNIX-like environment
-\vspace{-0.5em}
-\begin{itemize}
-    \item Developing a static site generator written in pure POSIX-compatible shell and PCRE-compatible Regex
-    \item Compiles markdown files to themed html pages using pure regex/sed; Program dependent on only coreutils 
-    \item Currently developing regex required to parse tables and lists, and removing dependency on PCRE (GNU coreutils)
+    \item Goal is a compiled, general-purpose language, eventually with \textit{Hindley-Milner} type inference and a e\textit{JIT} interpreter 
 \end{itemize}
 
 \subsection{Mindless \hfill \normalsize\textnormal{2021}}
-    A proof-of-concept biometrics password manager that doesn't actually store any passwords
+    A proof-of-concept biometrics password manager that doesn't store passwords \textit{anywhere}, not even encrypted
 \vspace{-0.5em}
 \begin{itemize}
-    \item Developed a biometrics-based password manager using facial recognition (opencv) with a web frontend (flask)
-    \item Developed a hashing algorithm to produce passwords from facial landmark data; No password is ever stored
-    \item Finalist project in a 36-hour hackathon (Hackwestern 8), competing as a one-man team out of 346 teams
+    \item Developed a password manager using facial landmark scanning (opencv) with a web frontend (flask)
+    \item Designed a hashing algorithm to consistently  generate passwords from facial landmark data; No password is ever stored
+    \item Finalist project in a 36-hour hackathon (Hackwestern 8), competing as a one-man team out of 346 teams of 4 to 5
+\end{itemize}
+
+\subsection{Shell Site Generator (\texttt{shsg}) \hfill \normalsize\textnormal{2020 -- Current}}
+    Minimalistic, lightweight, portable static site generator that can be deployed on any minimal UNIX-like environment
+\vspace{-0.5em}
+\begin{itemize}
+  \item Developing a static site generator written in pure \textbf{POSIX-compliant shell} and \textbf{PCRE Regex}
+    \item Compiles markdown to themed html pages with parsing in pure regex/sed; Code dependent on only a shell + coreutils 
+    \item In works: regex required to parse tables and lists, and removing dependency on PCRE Regex (support for Busybox)
 \end{itemize}
 
 \section{Education}
