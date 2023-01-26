@@ -8,6 +8,7 @@
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage{mathptmx}
+\usepackage{hyperref}
 \usepackage[margin=0.79in]{geometry}
 % \usepackage{fullpage}
 
@@ -15,6 +16,13 @@
 \setlength{\parindent}{0in}
 
 \pagenumbering{gobble}
+
+% Cool link colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
 
 \titleformat{\section}
 {\Large\bfseries}
@@ -34,6 +42,8 @@
 {0em}
 {}[  --]
 
+% \renewcommand{\familydefault}{\sfdefault}
+
 \renewcommand{\maketitle}{
 		\vspace{-4em}
 		{\huge\bfseries
@@ -42,7 +52,7 @@
     \\
     % \textit{Address Redacted} \\
     % \textit{Email Redacted} --- \textit{Phone Redacted} \\
-    Github: @ianayl, Email: ianayl@tutanota.com
+    Github: \href{https://github.com/ianayl}{@ianayl}, Linkedin: \href{https://www.linkedin.com/in/ianayl}{ianayl}, Email: \url{ianayl.work@gmail.com}
 }
 
 \titlespacing{\subsubsection}
@@ -70,17 +80,18 @@
 \section{Skills}
 
 \begin{tabular}{ l l }
-    \textbf{Programming Languages} & C, POSIX sh, Bash, Python, Java, Javascript, ARM assembly \\
-    \textbf{Web Development} & React, Express, NodeJS, Sass, Axios, Foundation, Bootstrap, MongoDB (Mongoose), Flask \\
-    \textbf{Tooling} & Linux, Nix/NixOS, PCRE Regex, Sed, Git, SSH/Telnet, Gdb, Valgrind, Netlify, Heroku \\
+    \textbf{Programming Languages} & C, Python, Java, Javascript, POSIX sh, Bash, ARM assembly, C++, R \\
+    \textbf{Web Development} & React, Express, NodeJS, Sass, Axios, Foundation, Bootstrap, SQL, MongoDB, Flask \\
+    \textbf{Tooling} & Linux, Nix/NixOS, PCRE Regex, Sed, Git, SSH, Jira, Telnet, Gdb, Valgrind, Netlify, Heroku \\
     \textbf{Certificates} & Microsoft Azure AI-900
 \end{tabular}
 
 \section*{Experiences}
 
-\subsection{Software Lead, \textit{Rentura (Startup)} \hfill \normalsize\textnormal{2021 -- Current}}
+\subsection{Software Developer / Architect, \textit{Rentura (Startup) - \normalsize\textit{Toronto, Canada}} \hfill \normalsize\textnormal{2021 -- Current}}
+Lead the development and design of a \textit{minimum viable product} for a B2C furniture rental platform
+\vspace{-0.5em}
 \begin{itemize}
-  \item Technical lead for the development of the \textit{minimum viable product} for a B2C furniture rental platform
   \item Developed an \textbf{Express.js} backend, implementing a \textbf{RESTful API} with \textbf{CRUD} endpoints; \textbf{OpenAPI} schema in works
   \item Maintained \textbf{MongoDB} instances and designed MongoDB schemas; Switch to PostgreSQL anticipated
   \item Developed a responsive, mobile-first \textbf{React.js} frontend using \textbf{Sass} and \textbf{Axios} (\textbf{MERN} stack)
@@ -88,7 +99,12 @@
     % \item 2021\--Current
 \end{itemize}
 
-\subsection{Web Developer, \textit{nvision} \hfill \normalsize\textnormal{2019}}
+\subsection{Software Developer, \textit{FIRST Robotics Team 6866} - \normalsize\textit{Markham, Canada}\hfill \normalsize\textnormal{2020}}
+\begin{itemize}
+  \item Developed an API for a conveyor magazine system to reliably send ammo to a flywheel system in \textbf{Java} using WPILib
+\end{itemize}
+
+\subsection{Web Developer, \textit{nvision} - \normalsize\textit{Markham, Canada} \hfill \normalsize\textnormal{2019}}
 \begin{itemize}
   \item Designed and developed internal employee dashboards using \textbf{MERN} stack and \textbf{Bootstrap} 
   \item Developed user-friendly Wordpress themes; Maintained a \textbf{LAMP} stack on a \textbf{Linux} system to host \textbf{WordPress} sites
@@ -100,11 +116,6 @@
 %     \item Maintained servers through Telnet, maintained internal management dashboards and image assets
 % \end{itemize}
 
-\subsection{Software Developer, \textit{FIRST Robotics Team 6866} \hfill \normalsize\textnormal{2020}}
-\begin{itemize}
-  \item Developed software for a conveyor magazine system to reliably send ammo to a flywheel system in \textbf{Java} using WPILib
-\end{itemize}
-
 % \subsection{Computer Repairs} 
 % \subsubsection{Home} Repaired laptop components, reflashed BIOS, fixed and reinstalled Operating Systems for clients privately 
 
@@ -114,26 +125,26 @@
 
 \section*{Projects}
 
-\subsection{Experimental Language \hfill \normalsize\textnormal{2020 -- Current}}
-Interpreted programming langauge written from scratch in \textbf{C}, with goals of static typing and strong type inference
+\subsection{Experimental Language \normalsize\textnormal{- \href{https://github.com/ianayl/ex-interpreter}{repo}}\hfill \normalsize\textnormal{2020 -- Current}}
+Interpreted programming langauge written from scratch in \textbf{C}/\textbf{C++}, with goals of static typing and strong type inference
 \vspace{-0.5em}
 \begin{itemize}
-  \item Designed an \textbf{LL(1)} parser producing abstract syntax trees, evaluated using a \textbf{tree-walk evaluator}predictable  
-    \item In works: \textbf{LR} parser integrated with an automata-based lexer, x86 Compilation, strong typing system and type inference
+  \item Designed an \textbf{LL(1)} parser producing abstract syntax trees, evaluated using a \textbf{tree-walk evaluator}
+    \item In works: \textbf{LR} parser integrated with an automata-based lexer, x86 compilation, strong typing system and type inference
         % TODO phrasing here sucks balls redo it
-    \item Goal is a compiled, general-purpose language, eventually with \textit{Hindley-Milner} type inference and a e\textit{JIT} interpreter 
+    \item Goal is a compiled, general-purpose language, eventually with \textit{Hindley-Milner} type inference and a \textit{JIT} interpreter 
 \end{itemize}
 
-\subsection{Mindless \hfill \normalsize\textnormal{2021}}
+\subsection{Mindless \normalsize\textnormal{- \href{https://github.com/ianayl/mindless}{repo}}\hfill \normalsize\textnormal{2021}}
     A proof-of-concept biometrics password manager that doesn't store passwords \textit{anywhere}, not even encrypted
 \vspace{-0.5em}
 \begin{itemize}
     \item Developed a password manager using facial landmark scanning (opencv) with a web frontend (flask)
-    \item Designed a hashing algorithm to consistently  generate passwords from facial landmark data; No password is ever stored
+    \item Devised method to generate consistent passwords from facial landmark data via hashing algorithms
     \item Finalist project in a 36-hour hackathon (Hackwestern 8), competing as a one-man team out of 346 teams of 4 to 5
 \end{itemize}
 
-\subsection{Shell Site Generator (\texttt{shsg}) \hfill \normalsize\textnormal{2020 -- Current}}
+\subsection{Shell Site Generator (\texttt{shsg}) \normalsize\textnormal{- \href{https://github.com/ianayl/shsg}{repo}}\hfill \normalsize\textnormal{2020 -- Current}}
     Minimalistic, lightweight, portable static site generator that can be deployed on any minimal UNIX-like environment
 \vspace{-0.5em}
 \begin{itemize}
@@ -143,7 +154,7 @@ Interpreted programming langauge written from scratch in \textbf{C}, with goals 
 \end{itemize}
 
 \section{Education}
-\subsection{University of Western Ontario \hfill \normalsize\textnormal{2021 -- Current}}
+\subsection{University of Western Ontario - \normalsize\textit{London, Canada} \hfill \normalsize\textnormal{2021 -- Current}}
 \subsubsection{Candidate for Bachelor of Science} Specialist in Honours Computer Science, Anticipated in June 2024
 
 \subsubsection{Awards} Dean's Honor List (2021 Fall/Winter), 3.9/4.0 GPA (90\%)
