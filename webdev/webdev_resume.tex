@@ -1,0 +1,199 @@
+%
+% TODO figure out formatting of resume, it sucks rn
+%
+
+\documentclass[9pt]{article}
+
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{mathptmx}
+\usepackage{hyperref}
+\usepackage[margin=0.5in]{geometry}
+% \usepackage{fullpage}
+
+% I don't want indents
+\setlength{\parindent}{0in}
+
+\pagenumbering{gobble}
+
+% Cool link colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\bfseries\large}
+{}
+{0em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[  --]
+
+% \renewcommand{\familydefault}{\sfdefault}
+
+\renewcommand{\maketitle}{
+		\vspace{-8em}
+    \begin{center}
+		{\huge\bfseries
+		\theauthor}
+    \vspace{0.5em}
+    \\
+    % \textit{Address Redacted} \\
+    % \textit{Email Redacted} --- \textit{Phone Redacted} \\
+    Github: \href{https://github.com/ianayl}{@ianayl}, Linkedin: \href{https://www.linkedin.com/in/ianayl}{ianayl}, Email: \url{ianayl.work@gmail.com}
+    \end{center}
+    \vspace{-1.5em}
+}
+
+\titlespacing{\subsubsection}
+{0em}{0.25em}{0.5em}
+
+\titlespacing{\subsection}
+{0em}{1.5em}{0em}
+
+\setitemize{noitemsep}
+
+\author{Ian Li}
+
+\begin{document}
+
+\maketitle
+
+% \section{Objective}
+% \vspace{0.1em}
+% \begin{itemize}
+% 	\item To obtain a co-op position at \textit{whatever}\\
+% 	\vspace{-1.5em}
+% 	\item To gain exposure to new techniques and technologies, and to obtain new skills
+% \end{itemize}
+
+\section{Skills}
+
+\begin{tabular}{ l l }
+    \textbf{Programming Languages} & Javascript/Typescript, Python, C++, CUDA, C, C\#, Java, Bourne Sh/Bash, Scheme, ARM assembly, R \\
+    \textbf{Tooling} & Linux, MS Azure, Selenium, LLVM, Nix/NixOS, Regex (PCRE), Make, Git, SSH, GDB/LLDB \\
+    \textbf{Web Development} & React, React Native, .NET Core, SQL, Express, SASS, Bootstrap, MongoDB, Flask \\
+    \textbf{Certificates} & Microsoft Azure AZ-900, Microsoft Azure AI-900
+\end{tabular}
+
+\section*{Experiences}
+
+% \subsection{Software Developer, \textit{FIRST Robotics Team 6866} - \normalsize\textit{Markham, Canada}\hfill \normalsize\textnormal{2020}}
+% \begin{itemize}
+%   \item Developed a control system and API for a conveyor magazine system to shoot at targets in \textbf{Java} using WPILib
+%   \item Contributed to custom PID controller class for precise control of motors
+% \end{itemize}
+
+\subsection{Web Developer, \textit{nvision} - \normalsize\textit{Markham, Canada} \hfill \normalsize\textnormal{2019}}
+\begin{itemize}
+  \item Independently developed employee dashboards for visualization of metrics using \textbf{React} and \textbf{MongoDB} (\textbf{MERN} stack)
+  \item Developed customizable Wordpress themes, collaborating with UI designers to bring design mockups into fruition
+  \item Maintained \textbf{Linux} servers and MySQL databases to host Wordpress sites using the \textbf{LAMP} stack
+\end{itemize}
+
+\subsection{Lead Software Developer, \textit{Rentura (startup)} - \normalsize\textit{Toronto, Canada} \hfill \normalsize\textnormal{2021-2022}}
+Lead the development and design of a \textit{minimum viable product} for a B2C furniture rental platform
+\vspace{-0.5em}
+\begin{itemize}
+  \item Independently developed server backend in \textbf{Javascript}, with a \textbf{RESTful API} using \textbf{CRUD} endpoints secured with \textit{tokens}
+  \item Maintained \textbf{MongoDB} instances on a \textbf{Linux} server, and designed database schemas for an \textit{order management system}
+  \item Collaboratively developed responsive, mobile-first \textit{e-commerce} frontends in \textbf{React.js} using \textbf{Sass} and \textbf{Axios} (\textbf{MERN} stack)
+    % \item TODO add business stuff later
+    % \item 2021\--Current
+\end{itemize}
+
+% \subsection{System Administrator, \textit{Gang RP Network} \hfill \normalsize\textnormal{2017-2018}}
+% \begin{itemize}
+%     \item Created custom game mods and 3D assets for game servers using Unity and Blender
+%     \item Maintained servers through Telnet, maintained internal management dashboards and image assets
+% \end{itemize}
+
+% \subsection{Computer Repairs} 
+% \subsubsection{Home} Repaired laptop components, reflashed BIOS, fixed and reinstalled Operating Systems for clients privately 
+
+% \subsection{Teaching Assistant}
+% \subsubsection{Markham}
+% Ran Google CS/STEM workshops (hour of code, scratch, basic 3D modelling, etc) --- 2014\--2018  
+
+\section*{Projects}
+
+% \subsection{Rentura \textnormal{(Startup)} \hfill \normalsize\textnormal{2021 -- 2022}}
+% Lead the development and design of a \textit{minimum viable product} for a B2C furniture rental platform
+% \vspace{-0.5em}
+% \begin{itemize}
+%   \item Independently developed server backend in \textbf{Javascript}, with a \textbf{RESTful API} using \textbf{CRUD} endpoints secured with \textit{tokens}
+%   \item Maintained \textbf{MongoDB} instances on a \textbf{Linux} server, and designed database schemas for an \textit{order management system}
+%   \item Collaboratively developed responsive, mobile-first \textit{e-commerce} frontends in \textbf{React.js} using \textbf{Sass} and \textbf{Axios} (\textbf{MERN} stack)
+%     % \item TODO add business stuff later
+%     % \item 2021\--Current
+% \end{itemize}
+
+
+\subsection{Mindless Password Manager \normalsize\textnormal{- \href{https://github.com/ianayl/mindless}{repo}}\hfill \normalsize\textnormal{2021}}
+    Proof-of-concept \textbf{unconditionally secure} biometrics password manager based on hashing algorithms (SHA256)
+    \vspace{-0.5em}
+\begin{itemize}
+  \item Developed a password manager using facial recognition landmarks (extracted using \textbf{OpenCV}) with a web frontend (\textbf{Flask})
+  \item Created a method to generate consistent passwords from facial landmark data: \textit{passwords are \textbf{never} stored! Not even encrypted}
+    \item Became a finalist project in a 36-hour hackathon (Hackwestern 8) as a one-man team out of 346 teams
+\end{itemize}
+
+\subsection{Experimental Language \normalsize\textnormal{- \href{https://github.com/ianayl/compiler}{repo}}\hfill \normalsize\textnormal{Current}}
+Shells are \textit{outdated}: Creating a language in \textbf{C++} with goals to be a good general-purpose language \textit{and} a fast replacement to shells
+\vspace{-0.5em}
+\begin{itemize}
+  \item Devised an automatic table-based \textbf{lexer generator}, and wrote a \textbf{recursive descent} parser following LL grammar
+  \item Writing an interpreter as a \textbf{tree-walk evaluator}, and AST passes to generate CFGs / \textbf{LLVM IR} for compilation
+  % \item Working on rewrite using a \textbf{LR} parser with integrated lexer, a compiler to \textbf{LLVM} IR, and a strong typing system
+        % TODO phrasing here sucks balls redo it
+  \item Working on a static type system with type inference, goals for JIT compilation in future using LLVM
+\end{itemize}
+
+
+\subsection{Shell Site Generator (\texttt{shsg}) \normalsize\textnormal{- \href{https://github.com/ianayl/shsg}{repo}}\hfill \normalsize\textnormal{Current \textit{(On hiatus)}}}
+  Ultra lightweight and portable static site generator that will run on \textit{anything} with a minimal UNIX-like environment
+    % Easy to use static site generator that can be deployed on any minimal UNIX-like environment
+\vspace{-0.5em}
+\begin{itemize}
+  \item Developing a static site generator using \textbf{POSIX shell} and \textbf{PCRE Regex}: \textit{No dependencies other than a UNIX shell \& coreutils!}
+  \item Created a transpiler, transpiling markdown to themed webpages with no installation, compilation, or alternative runtimes required
+    \item Working on removing dependency on PCRE extensions (support for Busybox), and parsing tables and lists in pure regex
+\end{itemize}
+
+\section*{Ongoing Thesis}
+
+\subsection{Improving KLARAPTOR: Automatic Finding of Optimal CUDA Kernel Launch Parameters\hfill \normalsize\textnormal{Current}}
+Automatically find near-optimal \textbf{CUDA} kernel parameters for fast GPU kernel execution. I am working on a(n):
+\vspace{-0.5em}
+\begin{itemize}
+  \item Method to detect constraints on kernel launch parameters using Scalar Evolution (SCEV) and Quantifier Elimination
+
+  \item \textbf{LLVM} pass to find range of all valid launch parameters for a given kernel (to facilitate profiling using KLARAPTOR)
+  % \item Working on rewrite using a \textbf{LR} parser with integrated lexer, a compiler to \textbf{LLVM} IR, and a strong typing system
+        % TODO phrasing here sucks balls redo it
+\end{itemize}
+\vspace{-0.5em}
+In order to speed up \textit{data-oblivious} computations (\textit{e.g.} matrix operations for machine learning/AI, computer graphics, \textit{etc.})
+
+
+\section{Education}
+\subsection{University of Western Ontario - \normalsize\textit{London, Canada} \hfill \normalsize\textnormal{2021 -- Current}}
+\subsubsection{Candidate for Honours Specialization in Computer Science} Anticipated in Spring 2025, 3.9/4.0 GPA 
+
+% \subsubsection{Awards} Dean's Honor List (2021-2022, 2022-2023),  % \section{References}
+% References available upon request
+
+\end{document}
