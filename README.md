@@ -1,9 +1,8 @@
 # Resume
 
-**Tl;dr** simple resume in `webdev`, general resume in `general`
+**Tl;dr** Please see my [compilers resume](https://github.com/ianayl/resume/blob/master/compilers/compilers_resume.pdf) for the most recent resume.
 
-A generalist resume is in the `general` folder. This is ordered by experiences, thesis, plus stuff most applicable to the current market first.
+I am currently pretty enamored with compilers; this is currently the career path I am aiming for, so it is currently the only resume being updated as of now.
 
-However, people I have shown my resume to has said that my generalist resume was way too technical and confusing -- I am told that the average HR personnel / recruiter would never understand my resume, as it requires significant technical background knowledge to fully comprehend what I was doing. As a result, I have made a new, simpler version of my resume in the `webdev` folder. This resume is organized with all web development related stuff first, so recruiters can see at a quick glance that I am not completely detached from reality, and is in-fact capable of doing simpler tasks `B^)`
+A generalist resume is in the `general` folder. This is ordered by experiences, thesis, plus stuff most applicable to the current market first. An older webdev resume is also available in the `webdev` folder.
 
-However, I am also _very_ fascinated with programming language design and compilers, so I have a `compilers` folder for a compiler-oriented resume first. This one prioritizes compiler stuff first.
